@@ -1,0 +1,76 @@
+1) Check if a Number is Prime or not.
+input = 5
+output = Prime
+
+input = 21
+output = Not Prime
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int n = sc.nextInt();
+	boolean isPrime = true;
+	
+	for(int i = 2; i<n ;i++)
+	{
+	    if(n%i == 0)
+	    {
+	        isPrime = false;
+	    }
+	}
+	if(isPrime == true)
+	{
+	    System.out.println("Prime number");
+	}
+	else
+		{
+	    System.out.println("not a Prime number");
+	}
+	}
+}
+
+output:
+ 5
+ Prime number
+
+
+
+2)Convert Integer into Binary value
+input = 4      output = 100
+input = 8      output = 1000
+input = 10    output = 1010
+input = 3      output = 11
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		int n=sc.nextInt();
+		String Binary = "";
+		while(n!=0)
+		{
+		    int Remainder = n%2;
+		    Binary=Remainder + Binary;
+		    n=n/2;
+		}
+		System.out.println(Binary);
+	}
+}
+
+Output:
+10
+1010
+
+
+3)Convert binary into Integer
+input = 100      output = 4
+input = 1000     output = 8
+input = 1010     output = 10
+input = 11       output = 3
+
+
